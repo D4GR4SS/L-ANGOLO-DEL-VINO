@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Oswald:wght@400;700&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -17,7 +18,8 @@
   --container-color: #fff;
 
   /*========== Font and typography ==========*/
-  --body-font: 'Lato', sans-serif;
+  --body-font: 'Arvo', serif;
+  --h-font: 'Oswald', sans-serif;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -69,6 +71,7 @@ h2,
 h3 {
   color: var(--title-color);
   font-weight: var(--font-bold);
+  font-family: var(--h-font);
 }
 
 h1,
@@ -293,7 +296,6 @@ button {
   left: 0;
   right: 0;
   margin: 0 auto;
-
   animation: scroll 3s infinite;
 }
 /* Scroll image animate */
@@ -827,7 +829,7 @@ button {
   }
 
   .section_title {
-    padding-right: 15rem;
+    padding-right: 1.5rem;
     padding-left: 1.75rem;
   }
 
@@ -887,7 +889,8 @@ button {
   }
 
   .products_img {
-    width: 200px;
+    width: 220px;
+    height: auto;
   }
 
   .products_shape {
