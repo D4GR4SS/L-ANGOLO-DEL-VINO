@@ -4,25 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Boxicons CSS -->
+    <!-- ? Boxicons CSS -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- ? MixItUp JS -->
     <script defer src="./assets/js/mixitup.min.js"></script>
+
     <script defer src="./assets/js/main.js"></script>
 
     <title>L'Angolo del Vino</title>
   </head>
   <body>
-    <!--==================== LOADER ====================-->
+    <!-- ******************************************************************* LOADER -->
     <div class="load" id="load">
       <img src="./assets/img/giphy.gif" alt="" class="load_gif" />
     </div>
 
-    <!--==================== HEADER ====================-->
+    <!-- ******************************************************************* HEADER -->
     <header class="header" id="header">
       <nav class="nav container">
         <a href="" class="nav_logo">
@@ -61,9 +63,9 @@
       </nav>
     </header>
 
-    <!--==================== MAIN ====================-->
+    <!-- ******************************************************************* MAIN -->
     <main>
-      <!--==================== HOME ====================-->
+      <!-- ******************************************************************* HOME -->
       <section class="home grid" id="home">
         <div class="home_container">
           <div class="home_content container">
@@ -73,11 +75,10 @@
             </p>
             <div class="home_data">
               <div class="home_data-group">
-                <h2 class="home_data-number">5</h2>
+                <h2 class="home_data-number">4</h2>
                 <h3 class="home_data-title">Anni</h3>
                 <p class="home-data-description">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Velit dolor voluptatem sunt.
+                  In vostra compagnia al servizio del vostro Gusto.
                 </p>
               </div>
 
@@ -85,7 +86,7 @@
                 <h2 class="home_data-number">50+</h2>
                 <h3 class="home_data-title">Etichette</h3>
                 <p class="home-data-description">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Provenienti dal Piemonte e da angoli selezionati d'Italia
                 </p>
               </div>
             </div>
@@ -98,10 +99,10 @@
             </a>
           </div>
         </div>
-        <img src="./assets/img/0101.jpg" alt="banner photo" class="home_img" />
+        <img src="./assets/img/0103.jpg" alt="banner photo" class="home_img" />
       </section>
 
-      <!--==================== ESPECIALTY ====================-->
+      <!-- ******************************************************************* SPECIALTY -->
       <div class="specialty section container" id="specialty">
         <div class="specialty_container">
           <div class="specialty_box">
@@ -109,7 +110,7 @@
               Prodotti d’alta qualità a prezzi competitivi!
             </h2>
             <div>
-              <a href="#" class="button specialty_button">Contattaci!</a>
+              <a href="#contact" class="button specialty_button">Contattaci!</a>
             </div>
           </div>
           <div class="specialty_category">
@@ -119,10 +120,11 @@
                 alt=""
                 class="specialty_img"
               />
-              <h3 class="specialty_title">Vini sfusi & in bottiglia</h3>
+              <h3 class="specialty_title">Vini sfusi e in bottiglia</h3>
               <p class="specialty_description">
                 Insieme ai nostri straordinari vini è possibile trovare una
-                vasta varietà di altri prodotti.
+                vasta varietà di altri prodotti. Come l'olio extravergine
+                d'oliva "L’Oro del Mediterraneo” spillato a pressione sfuso.
               </p>
             </div>
             <div class="specialty_group specialty_line">
@@ -144,7 +146,7 @@
                 alt=""
                 class="specialty_img"
               />
-              <h3 class="specialty_title">Vini</h3>
+              <h3 class="specialty_title">Consegne</h3>
               <p class="specialty_description">
                 Il mio servizio di consegna a domicilio è fornito direttamente
                 noi, nel più breve tempo possibile in base alla disponibilità.
@@ -154,7 +156,7 @@
         </div>
       </div>
 
-      <!--==================== PRODUCTS ====================-->
+      <!-- ******************************************************************* PRODUCTS -->
       <section class="products section" id="products">
         <div class="products_container container">
           <h2 class="section_title">Selezione di prodotti</h2>
@@ -164,12 +166,12 @@
               class="products_item products_line active-product"
               data-filter=".red"
             >
-              <h3 class="products_title">Rossi Piemontesi</h3>
-              <span class="products_stock">13 pezzi</span>
+              <h3 class="products_title">Vini Rossi Piemontesi</h3>
+              <span class="products_stock">14 pezzi</span>
             </li>
             <li class="products_item products_line" data-filter=".white">
-              <h3 class="products_title">Bianchi Piemontesi</h3>
-              <span class="products_stock">10 pezzi</span>
+              <h3 class="products_title">Vini Bianchi Piemontesi</h3>
+              <span class="products_stock">11 pezzi</span>
             </li>
             <li class="products_item products_line" data-filter=".est">
               <h3 class="products_title">Vini Veneti</h3>
@@ -178,6 +180,14 @@
             <li class="products_item products_line" data-filter=".box">
               <h3 class="products_title">Bag in Box</h3>
               <span class="products_stock">10 pezzi</span>
+            </li>
+            <li class="products_item products_line" data-filter=".dis">
+              <h3 class="products_title">Distillati</h3>
+              <span class="products_stock">5 pezzi</span>
+            </li>
+            <li class="products_item products_line" data-filter=".jam">
+              <h3 class="products_title">Marmellate & Mieli</h3>
+              <span class="products_stock">16 pezzi</span>
             </li>
           </ul>
 
@@ -466,7 +476,28 @@
                 </a>
               </div>
             </article>
+
             <!-- * WHITE -->
+            <article class="products_card white">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/langhe-chardonnay.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">10€</h2>
+                <h3 class="products_name">Langhe DOC Chardonnay</h3>
+                <a
+                  class="button products_button"
+                  href="https://www.produttorigovone.com/langhe-doc-chardonnay/"
+                  target="_blank"
+                >
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
             <article class="products_card white">
               <div class="products_shape">
                 <img
@@ -958,11 +989,412 @@
                 </a>
               </div>
             </article>
+
+            <!-- * DISTILLATI -->
+            <article class="products_card dis">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/grappa-moscato.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">10€</h2>
+                <h3 class="products_name">Grappa di Moscato</h3>
+                <a
+                  class="button products_button"
+                  href="https://www.produttorigovone.com/schede_tecniche/GRAPPA_MOSCATO.pdf"
+                  target="_blank"
+                >
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card dis">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/grappa-barbera.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">10€</h2>
+                <h3 class="products_name">Grappa di Barbera</h3>
+                <a
+                  class="button products_button"
+                  href="https://www.produttorigovone.com/schede_tecniche/GRAPPA_BARBERA.pdf"
+                  target="_blank"
+                >
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card dis">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/grappa-favorita.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">10€</h2>
+                <h3 class="products_name">Grappa di Favorita</h3>
+                <a
+                  class="button products_button"
+                  href="https://www.produttorigovone.com/schede_tecniche/GRAPPA_FAVORITA.pdf"
+                  target="_blank"
+                >
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card dis">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/grappa-langa.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">10€</h2>
+                <h3 class="products_name">Grappa di Langa</h3>
+                <a
+                  class="button products_button"
+                  href="https://www.produttorigovone.com/schede_tecniche/GRAPPA_LANGA.pdf"
+                  target="_blank"
+                >
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card dis">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/amaro-anima-xl.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">10€</h2>
+                <h3 class="products_name">Anima Amara</h3>
+                <a
+                  class="button products_button"
+                  href="https://www.animamara.com/"
+                  target="_blank"
+                >
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- * JAM -->
+            <article class="products_card jam">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/jars/Preparato-Albicocca.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">3€</h2>
+                <h3 class="products_name">Preparato Albicocca</h3>
+                <a class="button products_button">
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card jam">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/jars/Preparato-Amarena.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">3€</h2>
+                <h3 class="products_name">Preparato Amarena</h3>
+                <a class="button products_button">
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card jam">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/jars/Preparato-Arancia.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">3€</h2>
+                <h3 class="products_name">Preparato Arancia</h3>
+                <a class="button products_button">
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card jam">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/jars/Preparato-Fichi.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">3€</h2>
+                <h3 class="products_name">Preparato Fichi</h3>
+                <a class="button products_button">
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card jam">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/jars/Preparato-Fragola.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">3€</h2>
+                <h3 class="products_name">Preparato Fragola</h3>
+                <a class="button products_button">
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card jam">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/jars/Preparato-Frutti-di-Bosco.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">3€</h2>
+                <h3 class="products_name">Preparato Frutti di Bosco</h3>
+                <a class="button products_button">
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card jam">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/jars/Preparato-Lamponi.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">3€</h2>
+                <h3 class="products_name">Preparato Lamponi</h3>
+                <a class="button products_button">
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card jam">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/jars/Preparato-Mirtilli.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">3€</h2>
+                <h3 class="products_name">Preparato Mirtilli</h3>
+                <a class="button products_button">
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card jam">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/jars/Preparato-More.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">3€</h2>
+                <h3 class="products_name">Preparato More</h3>
+                <a class="button products_button">
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card jam">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/jars/Preparato-Pera.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">3€</h2>
+                <h3 class="products_name">Preparato pera</h3>
+                <a class="button products_button">
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card jam">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/jars/Preparato-Pesche.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">3€</h2>
+                <h3 class="products_name">Preparato Pesca</h3>
+                <a class="button products_button">
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card jam">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/jars/Preparato-Prugne.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">3€</h2>
+                <h3 class="products_name">Preparato Prugne</h3>
+                <a class="button products_button">
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card jam">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/jars/miele-acaia.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">
+                  1kg - 13€ <br />
+                  500g - 8,50€
+                </h2>
+                <h3 class="products_name">Miele d'Acacia</h3>
+                <a class="button products_button">
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card jam">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/jars/miele-castagno.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">
+                  1kg - 13€ <br />
+                  500g - 8,50€
+                </h2>
+                <h3 class="products_name">Miele Castagno</h3>
+                <a class="button products_button">
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card jam">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/jars/miele-millefiori.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">
+                  1kg - 13€ <br />
+                  500g - 8,50€
+                </h2>
+                <h3 class="products_name">Miele Millefiori</h3>
+                <a class="button products_button">
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
+            <article class="products_card jam">
+              <div class="products_shape">
+                <img
+                  src="./assets/img/products_img/jars/miele-tiglio.png"
+                  alt=""
+                  class="products_img"
+                />
+              </div>
+              <div class="products_data">
+                <h2 class="products_price">
+                  1kg - 13€ <br />
+                  500g - 8,50€
+                </h2>
+                <h3 class="products_name">Miele Tiglio</h3>
+                <a class="button products_button">
+                  <i class="bx bx-info-circle"></i>
+                </a>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <!--==================== QUALITY ====================-->
+      <!-- ******************************************************************* LOGOS PARTNER -->
+      <section class="logo section">
+        <div class="logo_container container">
+          <div class="logo_content grid">
+            <img
+              src="./assets/img/logos/logo-govone-2.png"
+              alt=""
+              class="logo_img"
+            />
+            <img
+              src="./assets/img/logos/logo-piovesan.png"
+              alt=""
+              class="logo_img"
+            />
+            <img
+              src="./assets/img/logos/logo-anima-amara-torino.png"
+              alt=""
+              class="logo_img"
+            />
+            <img
+              src="./assets/img/logos/logo-orto-autore.webp"
+              alt=""
+              class="logo_img"
+            />
+            <img src="./assets/img/logos/logo.png" alt="" class="logo_img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ******************************************************************* QUALITY -->
       <section class="quality section" id="premium">
         <div class="quality_container container">
           <h2 class="section_title">
@@ -970,7 +1402,11 @@
           </h2>
           <div class="quality_content grid">
             <div class="quality_images">
-              <img src="./assets/img/0102.jpg" alt="" class="quality_img-big" />
+              <img
+                src="./assets/img/0201.jpeg"
+                alt=""
+                class="quality_img-big"
+              />
               <img
                 src="./assets/img/0107.jpg"
                 alt=""
@@ -979,115 +1415,104 @@
             </div>
             <div class="quality_data">
               <h2 class="quality_title">Vini Sfusi</h2>
-              <h3 class="quality_price">€99</h3>
-              <span class="quality_special">prezzi speciali</span>
+              <h3 class="quality_price">prezzi speciali</h3>
+              <span class="quality_special">a partire da 3 euro al litro </span>
               <p class="quality_description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus cupiditate praesentium enim eligendi nemo beatae
-                dolorum natus nesciunt consectetur, deserunt rerum culpa
-                aspernatur inventore, fuga accusamus esse ullam magni non!
+                Questo tipo di vino viene utilizzato nella maggior parte dei
+                casi, come vino della casa. E lo si trova sempre più spesso
+                nelle abitazioni private, nei ristoranti e nelle trattorie,
+                nelle pizzerie, per vari motivi, non ultimo il buon rapporto
+                qualità-prezzo. Lo si sceglie principalmente per il prezzo molto
+                conveniente, visto che il Vino Sfuso riesce a essere acquistato
+                ad un prezzo molto più basso rispetto al classico vino in
+                bottiglia.
               </p>
               <div class="quality_buttons">
-                <button class="button">Compra</button>
-                <a href="#" class="quality_button"
-                  >Vedi <i class="bx bx-right-arrow-alt"></i
-                ></a>
+                <a href="./assets/docs/listino.pdf" target="_blank">
+                  <button class="button">VEDI LISTINO</button>
+                </a>
+
+                <a
+                  href="./assets/docs/listino.pdf"
+                  class="quality_button"
+                  download="listino-sfusi"
+                >
+                  SCARICA LISTINO <i class="bx bx-right-arrow-alt"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!--==================== LOGOS ====================-->
-      <section class="logo section">
-        <div class="logo_container container grid">
-          <img
-            src="./assets/img/logos/logo-govone.png"
-            alt=""
-            class="logo_img"
-          />
-          <img
-            src="./assets/img/logos/logo-piovesan.png"
-            alt=""
-            class="logo_img"
-          />
-          <img
-            src="./assets/img/logos/logo-anima-amara-torino.png"
-            alt=""
-            class="logo_img"
-          />
-          <img
-            src="./assets/img/logos/logo-orto-autore.webp"
-            alt=""
-            class="logo_img"
-          />
-          <img src="./assets/img/logos/logo.png" alt="" class="logo_img" />
-        </div>
-      </section>
 
-      <!--==================== CONTACT ====================-->
+      <!-- ******************************************************************* CONTACT -->
       <section class="contact section" id="contact">
         <div class="contact_container container">
-          <h2 class="section_title">
-            Contattaci per telefono, whatsapp o email. Effettuamo consegne a
-            domicilio!
-          </h2>
+          <h2 class="section_title">Contatti</h2>
 
           <div class="contact_content grid">
             <div class="contact_icons">
-              <a
-                href="https://wa.me/393397047642"
-                target="_blank"
-                class="button button_contact"
-              >
-                <i class="bx bxl-whatsapp"></i>
-              </a>
-              <a
-                href="tel:393397047642"
-                target="_blank"
-                class="button button_contact"
-              >
-                <i class="bx bx-phone"></i>
-              </a>
-
-              <a
-                href="mailto:langolodelvinotorino@gmail.com"
-                class="button button_contact"
-                target="_blank"
-              >
-                <i class="bx bx-mail-send"></i>
-              </a>
+              <div class="contact_item">
+                <a
+                  href="mailto:langolodelvinotorino@gmail.com"
+                  class="contact_button"
+                  target="_blank"
+                >
+                  <i class="bx bx-envelope"></i> email
+                </a>
+              </div>
+              <div class="contact_item">
+                <a
+                  href="https://wa.me/393397047642"
+                  class="contact_button"
+                  target="_blank"
+                >
+                  <i class="bx bxl-whatsapp"></i> whatsapp
+                </a>
+              </div>
+              <div class="contact_item">
+                <a href="tel:3397047642" class="contact_button">
+                  <i class="bx bx-phone-call"></i> telefono
+                </a>
+              </div>
+              <div class="contact_item">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100063611017090"
+                  class="contact_button"
+                  target="_blank"
+                >
+                  <i class="bx bxl-facebook"></i> facebook
+                </a>
+              </div>
             </div>
             <div class="contact_map">
-              <div
-                id="embed-map-display"
-                style="height: 100%; width: 100%; max-width: 100%"
-              >
-                <iframe
-                  style="height: 100%; width: 100%; border: 0"
-                  frameborder="0"
-                  src="https://www.google.com/maps/embed/v1/place?q=Via+Valentino+Carrera,+114,+Torino,+TO,+Italia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-                ></iframe>
+              <div class="contact_map">
+                <div
+                  id="google-maps-display"
+                  style="height: 100%; width: 100%; max-width: 100%"
+                >
+                  <iframe
+                    style="height: 100%; width: 100%; border: 0"
+                    frameborder="0"
+                    src="https://www.google.com/maps/embed/v1/place?q=L'Angolo+del+Vino,+Via+Valentino+Carrera,+Torino,+TO,+Italia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                  ></iframe>
+                </div>
+                <a
+                  class="google-map-code-enabler"
+                  href="https://www.bootstrapskins.com/themes"
+                  id="get-data-for-embed-map"
+                  >premium bootstrap themes</a
+                >
+                #google-maps-display .text-marker{}.map-generator{max-width:
+                100%; max-height: 100%; background: none}
               </div>
-              <a
-                class="my-codefor-googlemap"
-                rel="nofollow"
-                href="https://www.bootstrapskins.com/themes"
-                id="enable-map-info"
-                >premium bootstrap themes</a
-              ><style>
-                #embed-map-display img {
-                  max-height: none;
-                  max-width: none !important;
-                  background: none !important;
-                }
-              </style>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <!--==================== FOOTER ====================-->
+    <!-- ******************************************************************* FOOTER -->
     <footer class="footer">
       <div class="footer_container container">
         <h1 class="footer_title">L'Angolo del Vino</h1>
@@ -1128,23 +1553,22 @@
         <div class="footer_group">
           <ul class="footer_social">
             <a
-              href=""
+              class="footer_social-link"
+              href="https://wa.me/393397047642"
+              target="_blank"
+            >
+              <i class="bx bxl-whatsapp"></i>
+            </a>
+            <a
               class="footer_social-link"
               href="https://www.facebook.com/profile.php?id=100063611017090"
               target="_blank"
             >
-              <i class="bx bxl-facebook"></i
-            ></a>
-            <a href="#" target="_blank" class="footer_social-link"
-              ><i class="bx bxl-google"></i
-            ></a>
-            <a href="" class="footer_social-link"
-              ><i
-                class="bx bxl-whatsapp"
-                href="https://wa.me/393397047642"
-                target="_blank"
-              ></i
-            ></a>
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a class="footer_social-link">
+              <i class="bx bxl-google"></i>
+            </a>
           </ul>
           <span class="footer_copy">
             Copyright &copy;
@@ -1153,17 +1577,15 @@
           </span>
         </div>
       </div>
+      <div class="footer_cookie">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+        perferendis quaerat dolorib
+      </div>
     </footer>
 
-    <!--========== SCROLL UP ==========-->
+    <!-- ******************************************************************* SCROLL UP -->
     <a href="#" class="scrollup" id="scroll-up">
       <i class="bx bx-up-arrow-alt"></i>
     </a>
-
-    <!--=============== MIXITUP FILTER ===============-->
-    <script src=""></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src=""></script>
   </body>
 </html>

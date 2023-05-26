@@ -98,3 +98,7 @@ const scrollActive = () => {
   });
 };
 window.addEventListener('scroll', scrollActive);
+
+/*=============== FOOTER DATE ===============*/
+const date = document.getElementById('date');
+date.innerHTML = new Date().getFullYear();
