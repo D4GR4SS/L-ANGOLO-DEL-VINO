@@ -388,6 +388,10 @@ button {
   margin-bottom: 0.5rem;
 }
 
+.products_price {
+  text-transform: uppercase;
+}
+
 .products_stock {
   font-size: var(--small-font-size);
 }
@@ -424,6 +428,7 @@ button {
 
 .products_name {
   font-size: var(--normal-font-size);
+  padding: 0.5rem 0;
 }
 
 .products_button {
@@ -705,7 +710,8 @@ button {
     height: inherit;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
+    margin: 0 auto;
   }
 }
 
