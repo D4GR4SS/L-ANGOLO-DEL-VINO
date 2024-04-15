@@ -3,7 +3,7 @@ onload = () => {
 
   setTimeout(() => {
     load.style.display = 'none';
-  }, 1000);
+  }, 300);
 };
 
 const navMenu = document.getElementById('nav-menu'),
